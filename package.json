@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --compilers js:babel-core/register -w ./src/**/*.spec.js"
+    "test": "mocha --compilers js:babel-core/register ./src/**/*.spec.js"
   },
   "repository": {
     "type": "git",
