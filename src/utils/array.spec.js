@@ -24,7 +24,7 @@ const expect = chai.expect;
 
 describe('head', () => {
     it('returns the first item', () => {
-        const result = array.tail([1, 2, 3]);
+        const result = array.head([1, 2, 3]);
         expect(result).to.be.eql(1);
     });
 });
@@ -56,7 +56,7 @@ describe('sum', () => {
 
 describe('uniq', () => {
     it('returns a new list containing only one copy of each element in the original list', () => {
-        const result = array.sum([1, 2, 3, 2, 1]);
+        const result = array.uniq([1, 2, 3, 2, 1]);
         expect(result).to.be.eql([1, 2, 3]);
     });
 });
