@@ -59,3 +59,25 @@ const freq = array => new Map(
             ([item, count]) => ([item, count / array.length])
         )
 );
+
+
+const entropy = array  => Math.abs(
+    sum(
+        [...freq(array)].map(
+            ([,freq]) => freq * Math.log2(freq)
+        )
+    )
+);
+
+
+export {
+    head,
+    tail,
+    isEmpty,
+    at,
+    sum,
+    uniq,
+    count,
+    freq,
+    entropy
+};
