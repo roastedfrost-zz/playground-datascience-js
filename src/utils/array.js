@@ -16,10 +16,10 @@
 */
 
 
-const tail = ([,...t]) => t;
-
-
 const head = ([h]) => h;
+
+
+const tail = ([,...t]) => t;
 
 
 const isEmpty = array => Boolean(array.length === 0);
