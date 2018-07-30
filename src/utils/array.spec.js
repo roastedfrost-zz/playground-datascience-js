@@ -17,7 +17,7 @@
 
 
 import chai from 'chai';
-import array from './array';
+import * as array from './array';
 
 
 const expect = chai.expect;
